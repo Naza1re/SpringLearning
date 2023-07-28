@@ -1,15 +1,13 @@
 package org.example.CreatBean;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages="org.example.CreatBean")
 public class ProjectConfig {
 
 
-    @Bean
-    Parrot parrot(){
-        Parrot p = new Parrot();
-        return p;
-    }
+
 }

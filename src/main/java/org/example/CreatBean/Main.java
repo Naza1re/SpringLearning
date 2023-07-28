@@ -11,6 +11,11 @@ public class Main {
 
 
         Parrot p = context.getBean(Parrot.class);
+        Person person = context.getBean(Person.class);
+        person.setName("nikola");
+        p.setName("koko");
+        System.out.println(person);
+
         System.out.println(p);
 
     }
