@@ -5,16 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope("singleton")
-public class Parrot implements Birds {
-
+public class Sparrow implements Birds{
     private String name;
-
-    @Override
-    public String toString() {
-        return "Parrot{" +
-                "name='" + name + '\'' +
-                '}';
-    }
 
     public String getName() {
         return name;

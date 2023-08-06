@@ -13,12 +13,12 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", parrot=" + parrot +
+                ", parrot=" + birds +
                 '}';
     }
 
     @Autowired
-    private Parrot parrot;
+    private Birds birds;
 
     public String getName() {
         return name;
