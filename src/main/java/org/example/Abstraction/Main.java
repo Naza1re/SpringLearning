@@ -8,6 +8,8 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         CommentService commentService = context.getBean(CommentService.class);
         commentService.publishComment("My new Post");
+        commentService.publishComment("I wont to tell you about myself");
+
     }
     }
 
